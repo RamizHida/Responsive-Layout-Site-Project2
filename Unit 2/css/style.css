@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  flex-flow: column;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  margin: 15px 5px;
+}
+ul,
+li {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+p {
+  margin: 10px 10px 20px 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+span {
+  margin-left: 80px;
+}
+a {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+}
+#profile {
+  width: 280px;
+}
+#intro {
+  color: rgba(0, 0, 0, 0.4);
+  padding-top: 1em;
+  padding-bottom: 20px;
+}
+
+#contact {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+#email {
+  padding-bottom: 40px;
+}
+#portfolio {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.contact_bor {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.pics {
+  width: 285px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.list {
+  border: 10px solid rgb(245, 245, 245);
+}
+.contact {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 100%;
+  font-weight: normal;
+}
+
+#topname {
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  #bottomlink {
+    display: none;
+  }
+  ul,
+  .li {
+    display: inline-flex;
+  }
+  .top {
+    background-color: rgba(45, 45, 45, 0.2);
+    margin-top: 0;
+  }
+  #profile {
+    width: 300px;
+    position: relative;
+    left: 25%;
+  }
+  #intro {
+    padding-bottom: 10px;
+    position: relative;
+    left: 1px;
+    bottom: 200px;
+    padding-right: 350px;
+    font-size: x-large;
+    height: 10px;
+  }
+  #portfolio1 {
+    display: flex;
+    flex-flow: row wrap;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .eachproj {
+    flex: 1;
+    padding: 5px;
+  }
+  footer {
+    text-align: left;
+  }
+  #contactpar {
+    margin: auto 190px auto;
+  }
+  li {
+    padding: 10px;
+  }
+  .list {
+    border: none;
+  }
+  #bottomnav {
+    margin-right: 0px;
+    position: relative;
+    left: 17em;
+    bottom: 3.5em;
+    margin-bottom: 0px;
+  }
+
+  #break {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #bottomnav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #contactpar {
+    width: 600px;
+    padding-left: 150px;
+  }
+  #bottomnav {
+    margin-left: 230px;
+  }
+  /* #nav {
+    margin-left: 900px;
+  } */
+  .firstlist {
+    position: relative;
+    left: 350px;
+    bottom: 95px;
+  }
+
+  #break {
+    margin-left: 20px;
+  }
+  .topname {
+    margin-right: 850px;
+    padding-top: 50px;
+  }
+
+  #intro {
+    margin-right: 50px;
+  }
+  #profile {
+    margin-left: 150px;
+    height: auto;
+    width: 300px;
+  }
+}
